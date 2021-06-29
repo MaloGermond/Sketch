@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sketch style generator</title>
+    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h3>Sketch style generator</h3>
+      <div>
+        <h4>Load JSON</h4>
+        <input class="file" type="file" id="pathFile" accept=".json" onchange="readFile()" onload="loadFile()"></input>
+      </div>
+      <div>
+        <h4>Export shared text style</h4>
+        <input type="button" value="download" onClick="exportTextStyle()" class="button"></input>
+        <select name="Text style" id="optionTextStyle">
+          <option value="all">All text style</option>
+          <option value="h1">h1 only</option>
+          <option value="h2">h2 only</option>
+          <option value="h3">h3 only</option>
+          <option value="h4">h4 only</option>
+          <option value="h5">h5 only</option>
+          <option value="h6">h6 only</option>
+          <option value="body1">body1 only</option>
+          <option value="body2">body2 only</option>
+          <option value="caption">caption only</option>
+          <option value="subtitle1">subtitle1 only</option>
+          <option value="subtitle1">subtitle2 only</option>
+          <option value="overline">overline only</option>
+        </select>
+      </div>
+      <div>
+        <h4>Export shared layer style</h4>
+        <input type="button" value="download" onClick="exportLayerStyle()" class="button"></input>
+      </div>
+    </div>
+  </body>
+</html>
