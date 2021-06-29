@@ -1,0 +1,24 @@
+{
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Generate or update styles",
+      "identifier": "generator.my-command-identifier",
+      "script": "my-command.js"
+    }
+  ],
+  "menu": {
+    "title": "Privowny design system generator",
+    "items": [
+      "generator.my-command-identifier"
+    ]
+  },
+  "version": "0.1.0",
+  "description": "Privowny design system generator",
+  "name": "generator",
+  "identifier": "generator",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "Alexis Barlatier",
+  "authorEmail": "alexis@privowny.com"
+}

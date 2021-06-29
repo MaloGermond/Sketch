@@ -1,0 +1,16 @@
+{
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Generate or update styles",
+      "identifier": "generator.my-command-identifier",
+      "script": "./my-command.js"
+    }
+  ],
+  "menu": {
+    "title": "Privowny design system generator",
+    "items": [
+      "generator.my-command-identifier"
+    ]
+  }
+}

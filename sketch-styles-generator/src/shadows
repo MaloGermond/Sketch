@@ -1,0 +1,14 @@
+	"shadows":{
+		"__base__": {
+		   "color": "$colors.surface900.color"
+		},
+		"00":{
+			"shadows": []
+		},
+		"01":{
+			"shadows": [
+			 { x: 12, y: 23, spread: 12, radius: 4 },
+			 { x: 12, y: 23, spread: 12, radius: 4 },
+			]
+		},
+	}
